@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Game Generator</title>
+</head>
+<body>
+    <h1>Random Game</h1>
+    {% if game %}
+    <h2>{{ game.name }}</h2>
+    <p>{{ game.description }}</p>
+    <img src="{{ game.background_image }}" alt="{{ game.name }} Cover">
+    {% else %}
+    <p>No game found.</p>
+    {% endif %}
+</body>
+</html>
